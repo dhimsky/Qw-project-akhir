@@ -299,4 +299,18 @@
             },
         },
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const promoLink = document.querySelector(".promo-link");
+
+        promoLink.addEventListener("mouseenter", function () {
+            // Tambahkan animasi atau efek yang diinginkan saat cursor masuk
+            promoLink.style.transform = "scale(1.1)";
+        });
+
+        promoLink.addEventListener("mouseleave", function () {
+            // Hapus animasi atau efek saat cursor meninggalkan link
+            promoLink.style.transform = "scale(1)";
+        });
+    });
 })();
